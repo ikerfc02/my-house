@@ -29,6 +29,14 @@ public class Picture
      */
     public void draw()
     {
+               
+        Square floor = new Square();
+        floor.makeVisible();
+        floor.changeSize(10000000);
+        floor.moveVertical(120);
+        floor.changeColor("green");
+        floor.moveHorizontal(-10000);
+        
         wall = new Square();
         wall.moveHorizontal(-140);
         wall.moveVertical(20);
@@ -54,6 +62,8 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.moveVertical(120);
+        sun.slowMoveVertical(-100);
     }
 
     /**
