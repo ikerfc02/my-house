@@ -102,6 +102,10 @@ public class Picture
         if (wall != null)   // only if it's painted already...
         {
             sun.slowMoveVertical(100);
+            Person person1 = new Person();
+            person1.makeVisible();
+            person1.moveHorizontal(-250);
+            person1.slowMoveHorizontal(100);
         }
     }
 }
